@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "class-scheduler"
+    }
+  },
+  "defaultProject": "class-scheduler",
+  "cli": {
+    "analytics": "10b6e603-9153-4245-a1d0-3f7b8c3e4853"
+  }
 }
