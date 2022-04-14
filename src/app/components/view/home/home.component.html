@@ -1,0 +1,62 @@
+<mat-card class="home mat-elevation-z3" style="margin-bottom: 5%;">
+    <mat-card-title class="title">
+        Bem Vindo!
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        Sistema de agendamento de aulas
+    </mat-card-subtitle>
+</mat-card>
+<div *ngIf="!this.subscribe">
+    <button mat-raised-button (click)="singIn()" color="primary">
+        Cadastrar usuário
+    </button>
+</div>
+
+<div *ngIf="!this.login">
+    <button mat-raised-button (click)="singUp()" color="primary">
+        Login
+    </button>
+</div>
+<div *ngIf="this.subscribe">
+    <mat-card style="width: 56%;">
+        <mat-card-title>Criar usuário</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" [(ngModel)]="user.nickname" name="nickname">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Senha" type="password" [(ngModel)]="user.password" name="password">
+            </mat-form-field>
+        </form>
+        <button mat-raised-button (click)="createUser()" color="primary">
+            Cadastrar usuário
+        </button>
+
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </mat-card>
+
+</div>
+
+<div *ngIf="this.login && !this.subscribe">
+    <mat-card style="width: 56%; margin-top: 2%;" >
+        <mat-card-title>Criar usuário</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" [(ngModel)]="user.nickname" name="nickname">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Senha" type="password" [(ngModel)]="user.password" name="password">
+            </mat-form-field>
+        </form>
+        <button mat-raised-button (click)="loginUser()" color="primary">
+            Login
+        </button>
+
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </mat-card>
+
+</div>

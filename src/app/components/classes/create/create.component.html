@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Marcar aula</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="classes.student" name="student">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Professor" [(ngModel)]="classes.teacher" name="teacher">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data da aula" [(ngModel)]="classes.doc" name="doc"
+                [matDatepicker]="dp3" disabled>
+            <mat-datepicker-toggle matSuffix [for]="dp3" [(ngModel)]="classes.doc" name="doc"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+        </mat-form-field>        
+    </form>
+    <button mat-raised-button (click)="createClass()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
