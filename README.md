@@ -1,28 +1,46 @@
-# ClassScheduler
+# Agenda de cadastro de aulas
+> Projeto desenvolvido para exibição de Crud por Yago Marialva Bentes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
 
-## Development server
+O Sistema Agenda de cadastro de aulas é um projeto desenvolvido em angular para aplicação dos conceitos de criar e ler dados
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![](src/assets/home.png)
 
-## Code scaffolding
+## Instalação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto é composto de duas partes: o frontend em angular(principal) e o backend em java spring boot.
+Para instalar o frontend, somente é necessário utilizar o comando:
+`npm install` 
 
-## Build
+Para o backend, deve-se clonar o repositório:
+`https://github.com/yagomarialva/class-schedule-backend` 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Exemplo de uso
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O Sistema cadastra as aulas desejadas pelo aluno:
+![](src/assets/cadastrar.png)
 
-## Running end-to-end tests
+Para consultar as aulas:
+![](src/assets/listar.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Histórico de lançamentos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# class-scheduler-frontend
+* 0.0.1
+    * Primeira interação do sistema
+
+## Meta
+
+Yago Marialva Bentes – yago.marialva@gmail.com
+
+
+[https://github.com/yagomarialva](https://github.com/yagomarialva)
+
+## Contributing
+
+1. Faça o _fork_ do projeto (<https://github.com/yagomarialva/portifolio-site/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
